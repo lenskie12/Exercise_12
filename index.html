@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Layout</title>
+<style>
+* {
+  box-sizing:border-box;
+}
+body {
+  background-color: limegreen;
+}
+
+.leftheader {
+  background-color:green;
+  padding:0 20px;
+  float:left;
+  width:50%;
+  text-align: center;
+}
+
+.rightheader {
+  background-color:white;
+  padding:0 20px;
+  float:left;
+  width:50%;
+  text-align: center;
+}
+
+.column {
+  background-color: white;
+  padding:350px;
+  float:left;
+  width:100%;
+  text-align: center;
+  background-image: url('schooldays.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.column1 {
+  background-color:white;
+  padding:2px;
+  float:left;
+  width:33.3333333333%;
+  text-align: center;
+}
+
+.column2 {
+  background-color:gray;
+  padding:40px;
+  float:left;
+  width:33.3333333333%;
+  text-align: center;
+}
+
+.column3 {
+  background-color:lightblue;
+  padding:40px;
+  float:left;
+  width:33.3333333333%;
+  text-align: center;
+}
+
+.footer {
+  background-color:brown;
+  padding:20px;
+  float:left;
+  width:25%;
+  text-align: center;
+}
+
+.footer1 {
+  background-color:pink;
+  padding:20px;
+  float:left;
+  width:25%;
+  text-align: center;
+}
+
+.footer2 {
+  background-color:white;
+  padding:20px;
+  float:left;
+  width:25%;
+  text-align: center;
+}
+.footer3 {
+  background-color:gray;
+  padding:20px;
+  float:left;
+  width:25%;
+  text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+  .leftheader, .rightheader, .column {
+    width:100%; 
+  }
+  
+@media screen and (max-width:768px) {
+  .column1, .column2, .column3 {
+    width:100%; 
+}
+
+@media screen and (max-width:768px) {
+  .footer, .footer1, .footer2, .footer3 {
+    width:50%; 
+ }
+  
+@media screen and (max-width:320px) {
+  .footer, .footer1, .footer2, .footer3 {
+    width:100%; 
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="leftheader">
+  <h1>Philippine: "Baguio City"</h1>
+</div>
+
+<div class="rightheader">
+  <h1>News: "Botanical Garden"</h2>
+</div>
+
+<div class="column">
+</div>
+
+<div class="column1">
+  <h2>About:</h2>
+  <p>Botanical garden, also called botanic garden, originally, a collection of living plants designed chiefly to illustrate relationships within plant groups. ... A display garden that concentrates on woody plants (shrubs and trees) is often referred to as an arboretum.</p>
+</div>
+
+<div class="column2">
+  <h1>More...</h1>
+</div>
+
+<div class="column3">
+  <h1>Summary</h1>
+</div>
+<div class="footer">
+  <h1>Events</h1>
+</div>
+
+<div class="footer1">
+  <h1>Programs</h1>
+</div>
+
+<div class="footer2">
+  <h1>Summary</h1>
+</div>
+
+<div class="footer3">
+  <h1>References</h1>
+</div>
+</body>
+</html>
